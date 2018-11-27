@@ -346,27 +346,28 @@
     
     
     <article class="index-post">
-        <a class="abstract-title" href="/2018/11/23/hello-world/">
+        <a class="abstract-title" href="/2018/11/27/Nginx/">
             
-                <span>Hello World</span>
+                <span>Nginx</span>
         </a>
         <div class="abstract-content">
-            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick StartCreate a new post1$ hexo new "My New Post"
-More info: Writing
-Run server1$ hexo server
-More...
+            Nginx
+“Nginx是一款轻量级的HTTP服务器，采用事件驱动的异步非阻塞处理方式框架，这让其具有极好的IO性能，时常用于服务端的反向代理和负载均衡。”
+
+启动Nginx服务$nginx：直接启动$systemctl start nginx.service
+停止Nginx服务的四种方法$nginx -s stop：无论进程是否在工作，都直接停止进程$nginx -s  quit：比较温和一些，需要进程完成当前工作后再停止$killall nginx：直接杀死进程$systemctl stop nginx.service
+重启Nginx服务$nginx -s reopen$system...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
             <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/11/23</span>
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/11/27</span>
             </div>
             <!-- tags  -->
             
             <div class="abstract-tags">
     
-        <a class="post-tag" href="javascript:void(0);" data-tags="hello world">hello world</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags="Nginx">Nginx</a>
     
 </div>
             

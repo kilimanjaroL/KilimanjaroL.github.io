@@ -22,7 +22,7 @@
     <meta name="description" content="">
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>kilimanjaroL&#39;s Blog</title>
+    <title>webpack-坑 · kilimanjaroL&#39;s Blog</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -203,12 +203,23 @@
 </head>
 
     
+        <body class="post-body">
+    
     
 <header class="header">
 
     <div class="read-progress"></div>
     <div class="header-sidebar-menu">&#xe775;</div>
     <!-- post页的toggle banner  -->
+    
+    <div class="banner">
+            <div class="blog-title">
+                <a href="/">kilimanjaroL&#39;s Blog.</a>
+            </div>
+            <div class="post-title">
+                <a href="#" class="post-name">webpack-坑</a>
+            </div>
+    </div>
     
     <a class="home-link" href="/">kilimanjaroL's Blog.</a>
 </header>
@@ -220,24 +231,74 @@
 
 
 
+
+height:50vh;
 ">
     
     <!-- 主页  -->
+    
+    
+    <!-- 404页  -->
             
     <div class="site-intro-placeholder"></div>
-    <div class="site-intro-img" style="background-image: url(/)"></div>
+    <div class="site-intro-img" style="background-image: url(/intro/post-bg.jpg)"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
             <!-- 主页  -->
+            
+            webpack-坑
+            <!-- 404 -->
             
         </h1>
         <!-- 副标题 -->
         <p class="intro-subtitle">
             <!-- 主页副标题  -->
             
+            
+            <!-- 404 -->
+            
         </p>
         <!-- 文章页meta -->
+        
+            <div class="post-intros">
+                <!-- 文章页标签  -->
+                
+                    <div class="post-intro-tags">
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="webpack">webpack</a>
+    
+</div>
+                
+                
+                    <div class="post-intro-read">
+                        <span>字数统计: <span class="post-count word-count">1.1k</span>阅读时长: <span class="post-count reading-time">4 min</span></span>
+                    </div>
+                
+                <div class="post-intro-meta">
+                    <span class="post-intro-calander iconfont-archer">&#xe676;</span>
+                    <span class="post-intro-time">2018/11/27</span>
+                    
+                    <span id="busuanzi_container_page_pv" class="busuanzi-pv">
+                        <span class="iconfont-archer">&#xe602;</span>
+                        <span id="busuanzi_value_page_pv"></span>
+                    </span>
+                    
+                    <span class="shareWrapper">
+                        <span class="iconfont-archer shareIcon">&#xe71d;</span>
+                        <span class="shareText">Share</span>
+                        <ul class="shareList">
+                            <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
+                                <div class="share-qrcode"></div>
+                            </li>
+                            <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
+                            <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
+                            <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
+                            <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
         
     </div>
 </div>
@@ -338,43 +399,79 @@
 </script>        
         <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
         <div class="container container-unloaded">
-            <main class="main index-page">
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2018/11/23/hello-world/">
-            
-                <span>Hello World</span>
-        </a>
-        <div class="abstract-content">
-            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick StartCreate a new post1$ hexo new "My New Post"
-More info: Writing
-Run server1$ hexo server
-More...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/11/23</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class="abstract-tags">
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="hello world">hello world</a>
-    
-</div>
-            
-        </div>
+            <main class="main post-page">
+    <article class="article-entry">
+        <h2 id="webpack-Learning（遇到的问题）"><a href="#webpack-Learning（遇到的问题）" class="headerlink" title="webpack Learning（遇到的问题）"></a>webpack Learning（遇到的问题）</h2><h3 id="学习步骤："><a href="#学习步骤：" class="headerlink" title="学习步骤："></a>学习步骤：</h3><p>1、跟着网上教程走了一遍<a href="https://segmentfault.com/a/1190000012789253" target="_blank" rel="noopener">参考的流程</a>，遇到问题便搜索解决<br>2、看webpack文档，了解相关概念<br>3、搜索webpack相关知识，发现了一篇写得比较详细的入门，解答了我在第一遍配置中遇到的问题：<a href="https://www.jianshu.com/p/42e11515c10f" target="_blank" rel="noopener"> 入门Webpack，看这篇就够了</a></p>
+<h3 id="搭建简单的基于webpack的vue项目（我遇到的坑点）"><a href="#搭建简单的基于webpack的vue项目（我遇到的坑点）" class="headerlink" title="搭建简单的基于webpack的vue项目（我遇到的坑点）"></a>搭建简单的基于webpack的vue项目（我遇到的坑点）</h3><h4 id="1）项目初始化时："><a href="#1）项目初始化时：" class="headerlink" title="1）项目初始化时："></a>1）项目初始化时：</h4><p>新建一个文件夹，执行：<code>$npm init -y</code><br>-y 标记表示接受 package.json 文件的默认值,也可以<code>npm init</code>然后按提示配置(一直按回车也可以得到一个默认配置）</p>
+<h4 id="2）webpack安装时："><a href="#2）webpack安装时：" class="headerlink" title="2）webpack安装时："></a>2）webpack安装时：</h4><p><code>$npm install --save-dev webpack</code>(目前安装的是^4.26.0）<br>根据官网提示<code>如果你使用 webpack 4+ 版本，你还需要安装 CLI。</code><br>所以还需要<code>$npm install --save-dev webpack-cli</code></p>
+<p><strong>这里有一个注意点：</strong></p>
+<p>在上面的安装完成之后，如果直接运行<code>webpack</code>命令，会报错，提醒需要安装webpack-cli<br>网上找到的解释：在webpack 3中，webpack本身和它的cli以前都是在同一个包中，但在第4版中，他们已经将两者分开来更好地管理它们。</p>
+<p>解决：</p>
+<ul>
+<li>如果webpack不是全局安装的，在没有<code>webpack.config.js</code>配置文件时在终端中使用<code>webpack</code>命令时，需要额外指定其在node_modules中的地址如：<code>$node_modules/.bin/webpack src/index.js</code>；</li>
+<li><p>如果是已经有了<code>webpack.config.js</code>配置文件，则只需要运行<code>$node_modules/.bin/webpack</code></p>
+</li>
+<li><p>另外一种方法：在<code>package.json</code>中配置：</p>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&quot;scripts&quot;: &#123;</span><br><span class="line">    &quot;start&quot;: &quot;webpack&quot; </span><br><span class="line">  &#125;,</span><br></pre></td></tr></table></figure>
+<p>便可以使用<code>$npm start</code>命令启动，相当于运行了<code>webpack</code></p>
+<blockquote>
+<p><strong>原因：</strong><code>package.json</code>中的<code>script</code>会按一定顺序寻找命令对应位置，本地的<code>node_modules/.bin</code>路径就在这个寻找清单中，所以无论是全局还是局部安装的Webpack，都不需要像前面那指明详细的路径了。</p>
+</blockquote>
+<blockquote>
+<p>npm的<code>start</code>命令是一个特殊的脚本名称，其特殊性表现在，在命令行中使用<code>npm start</code>就可以执行其对于的命令，如果对应的此脚本名称不是<code>start</code>，想要在命令行中运行时，需要这样用<code>npm run {script name}</code>如<code>npm run build</code></p>
+</blockquote>
+<h4 id="3）关于webpack-dev-server"><a href="#3）关于webpack-dev-server" class="headerlink" title="3）关于webpack-dev-server"></a>3）关于<code>webpack-dev-server</code></h4><p>是<code>Webpack</code>提供一个可选的本地开发服务器，这个本地服务器基于node.js构建，可以让浏览器监听代码的修改，并自动刷新显示修改后的结果，需要先安装后写入webpack.config.js配置中：<br><code>$npm install --save-dev webpack-dev-server</code><br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">devServer: &#123;</span><br><span class="line">   contentBase: <span class="string">"./public"</span>,<span class="comment">//本地服务器所加载的页面所在的目录</span></span><br><span class="line">   historyApiFallback: <span class="literal">true</span>,<span class="comment">//不跳转</span></span><br><span class="line">   inline: <span class="literal">true</span><span class="comment">//实时刷新</span></span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure></p>
+<p>在package.json 的scripts中配置:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&quot;dev&quot;: &quot;webpack-dev-server --open --hot&quot;,</span><br></pre></td></tr></table></figure></p>
+<p>而后便可以用<code>$npm run dev</code>命令启动</p>
+<h4 id="4）在引入babel时："><a href="#4）在引入babel时：" class="headerlink" title="4）在引入babel时："></a>4）在引入babel时：</h4><p>遇到的错：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">babel-loader@8 requires Babel 7.x (the package &apos;@babel/core&apos;). If you&apos;d like to use Babel 6.x (&apos;babel-core&apos;), you should install &apos;babel-loader@7&apos;.</span><br></pre></td></tr></table></figure></p>
+<p>原因：版本不统一的问题，<code>babel-loader 8</code>版本需要的<code>babel-core 7</code>的版本，但是我装的是 6，所以可以降低<code>babel-loade</code>r到7的版本<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&quot;babel-core&quot;: &quot;^6.22.1&quot;,</span><br><span class="line">&quot;babel-loader&quot;: &quot;^7.1.1&quot;,</span><br><span class="line">&quot;babel-polyfill&quot;: &quot;^6.26.0&quot;,</span><br><span class="line">&quot;babel-preset-env&quot;: &quot;^1.3.2&quot;,</span><br><span class="line">&quot;babel-preset-stage-3&quot;: &quot;^6.24.1&quot;,</span><br></pre></td></tr></table></figure></p>
+<h4 id="5）引入vue-loader时"><a href="#5）引入vue-loader时" class="headerlink" title="5）引入vue-loader时"></a>5）引入vue-loader时</h4><p>报错：vue-loader was used without the corresponding plugin<br>原因：vue-loader 15 的版本需要再添加plugin的配置<br>解决：在webpack.config.js中添加：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> &#123; VueLoaderPlugin &#125; = <span class="built_in">require</span>(<span class="string">'vue-loader'</span>)</span><br><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">	plugins: [ </span><br><span class="line">		<span class="keyword">new</span> VueLoaderPlugin()   </span><br><span class="line">	]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>或者把vue-loader降为14版本</p>
+<p>其他的就没有啥问题了，按照我网上的搭建流程走，大致就知道了webpack的一些配置，再看看文档，就会对配置中的概念有个初步的了解。</p>
+<p>最后还是再说一说这篇文章，写得比较详细，看过的人也很多，对我的入门有一定的帮助：<a href="https://www.jianshu.com/p/42e11515c10f" target="_blank" rel="noopener"> 入门Webpack，看这篇就够了</a>：关于为什么使用webpack。如何使用，以及它的强大功能，都有介绍，我便不再复述了，以后再来看这骗，嘻嘻嘻。</p>
+<p><strong>其他的webpack参考资料：</strong><br><a href="https://github.com/wallstreetcn/webpack-and-spa-guide" target="_blank" rel="noopener">Webpack 4 和单页应用入门</a><br><a href="https://juejin.im/post/5b56909a518825195f499806" target="_blank" rel="noopener">手摸手，带你用合理的姿势使用webpack4（上）</a><br><a href="https://juejin.im/post/5b5d6d6f6fb9a04fea58aabc" target="_blank" rel="noopener">手摸手，带你用合理的姿势使用webpack4（下）</a></p>
+
     </article>
+    <!-- license  -->
+    
+        <div class="license-wrapper">
+            <p>原文作者：<a href="https://kilimanjarol.github.io">KilimanjaroL</a>
+            </p><p>原文链接：<a href="https://kilimanjarol.github.io/2018/11/27/webpack-坑/">https://kilimanjarol.github.io/2018/11/27/webpack-坑/</a>
+            </p><p>发表日期：<a href="https://kilimanjarol.github.io/2018/11/27/webpack-坑/">November 27th 2018, 3:06:55 pm</a>
+            </p><p>更新日期：<a href="https://kilimanjarol.github.io/2018/11/27/webpack-坑/">November 27th 2018, 3:09:12 pm</a>
+            </p><p>版权声明：本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
+        </div>
     
     <!-- paginator  -->
+    <ul class="post-paginator">
+        <li class="next">
+            
+        </li>
+        <li class="previous">
+            
+                <div class="prevSlogan">Previous Post</div>
+                <a href="/2018/11/27/Xhr-learning续/" title="Xhr-learning续">
+                    <div class="prevTitle">Xhr-learning续</div>
+                </a>
+            
+        </li>
+    </ul>
+    <!-- 评论插件 -->
+    <!-- 来必力City版安装代码 -->
+
+<!-- City版安装代码已完成 -->
     
+    
+    <!-- partial('_partial/comment/changyan') -->
+    <!--PC版-->
+
+
+    
+    
+
+    <!-- 评论 -->
 </main>
             <!-- profile -->
             
@@ -459,6 +556,24 @@ More...
 </footer>
     </div>
     <!-- toc -->
+    
+    <div class="toc-wrapper" style=
+    
+
+
+
+
+
+
+
+top:50vh;
+
+    >
+        <div class="toc-catalog">
+            <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
+        </div>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#webpack-Learning（遇到的问题）"><span class="toc-number">1.</span> <span class="toc-text">webpack Learning（遇到的问题）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#学习步骤："><span class="toc-number">1.1.</span> <span class="toc-text">学习步骤：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#搭建简单的基于webpack的vue项目（我遇到的坑点）"><span class="toc-number">1.2.</span> <span class="toc-text">搭建简单的基于webpack的vue项目（我遇到的坑点）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1）项目初始化时："><span class="toc-number">1.2.1.</span> <span class="toc-text">1）项目初始化时：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2）webpack安装时："><span class="toc-number">1.2.2.</span> <span class="toc-text">2）webpack安装时：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3）关于webpack-dev-server"><span class="toc-number">1.2.3.</span> <span class="toc-text">3）关于webpack-dev-server</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4）在引入babel时："><span class="toc-number">1.2.4.</span> <span class="toc-text">4）在引入babel时：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5）引入vue-loader时"><span class="toc-number">1.2.5.</span> <span class="toc-text">5）引入vue-loader时</span></a></li></ol></li></ol></li></ol>
+    </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
     <div class="sidebar sidebar-hide">
@@ -770,6 +885,8 @@ jsonContent:
     
     </div>
     <!-- async load share.js -->
+    
+        <script src="/scripts/share.js" async></script>    
      
     </body>
 </html>

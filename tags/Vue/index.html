@@ -346,27 +346,103 @@
     
     
     <article class="index-post">
-        <a class="abstract-title" href="/2018/11/23/hello-world/">
+        <a class="abstract-title" href="/2018/11/27/Vuex/">
             
-                <span>Hello World</span>
+                <span>Vuex</span>
         </a>
         <div class="abstract-content">
-            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick StartCreate a new post1$ hexo new "My New Post"
-More info: Writing
-Run server1$ hexo server
-More...
+            Vuex learningvuex文档
+Vuex 是什么？
+Vuex 是一个专为 Vue.js 应用程序开发的状态管理模式，采用集中式存储管理应用的所有组件的状态
+
+使用场景
+应用够简单，最好不要使用 Vuex
+构建中大型单页应用——考虑如何更好地在组件外部管理状态——Vuex 
+安装：npm install vuex -S
+引入：import Vuex from &#39;vuex&#39; 、Vue.use(Vuex) 
+
+核心1、store（仓库）：包含着你的应用中大部分的状态 (state)
+
+Vuex 的状态存储是响应式的。当 Vue 组件从 store 中读取状态的时候,若 ...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
             <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/11/23</span>
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/11/27</span>
             </div>
             <!-- tags  -->
             
             <div class="abstract-tags">
     
-        <a class="post-tag" href="javascript:void(0);" data-tags="hello world">hello world</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags="Vue">Vue</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href="/2018/11/27/Vue-Router/">
+            
+                <span>Vue-Router</span>
+        </a>
+        <div class="abstract-content">
+            Vue Router 查漏补缺文档
+一、 动态路由匹配！当使用路由参数时，例如从 /user/foo 导航到 /user/bar，原来的组件实例会被复用——这意味着组件的生命周期钩子不会再被调用，So：想对路由参数的变化作出响应的话，可以1）watch $route 对象2）使用beforeRouteUpdate  导航守卫
+
+匹配优先级：同一个路径可以匹配多个路由，此时，匹配的优先级就按照路由的定义顺序——谁先定义的，谁的优先级就最高
+
+二、 嵌套路由：1）&lt;router-view&gt;渲染最高级路由匹配到的组件，不要是个组件都加2）提供一个空的子路由，会被渲染出来123456...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/11/27</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class="abstract-tags">
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="Vue">Vue</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href="/2018/11/27/Vue/">
+            
+                <span>Vue</span>
+        </a>
+        <div class="abstract-content">
+            vueNotes (2018/10/2~2018/10/19)1.Vue.js文档学习
+生命周期函数：beforeCreated/ created/ boforeMount/ mounted/ beforeUpdate/ updated/ beforeDertroy/ destroyed/! 不要在选项属性上或回调函数上使用箭头函数，因为箭头函数是和父级上下文绑定在一起的  
+
+V-html 可以输出真正的HTML，而双花括号会将数据解释为普通文本，所以需要注意：站点上动态渲染的HTML可能会比较危险，容易导致XSS攻击  
+
+v-on简写为@XXX=&quot;YYY&quot; v-...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/11/27</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class="abstract-tags">
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="Vue">Vue</a>
     
 </div>
             

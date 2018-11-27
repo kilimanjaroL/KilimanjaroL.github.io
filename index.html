@@ -359,6 +359,284 @@ height:50vh;
     
     
     <article class="index-post">
+        <a class="abstract-title" href="/2018/11/27/webpack-坑/">
+            
+                <span>webpack-坑</span>
+        </a>
+        <div class="abstract-content">
+            webpack Learning（遇到的问题）学习步骤：1、跟着网上教程走了一遍参考的流程，遇到问题便搜索解决2、看webpack文档，了解相关概念3、搜索webpack相关知识，发现了一篇写得比较详细的入门，解答了我在第一遍配置中遇到的问题： 入门Webpack，看这篇就够了
+搭建简单的基于webpack的vue项目（我遇到的坑点）1）项目初始化时：新建一个文件夹，执行：$npm init -y-y 标记表示接受 package.json 文件的默认值,也可以npm init然后按提示配置(一直按回车也可以得到一个默认配置）
+2）webpack安装时：$npm install --sa...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/11/27</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class="abstract-tags">
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="webpack">webpack</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href="/2018/11/27/Xhr-learning续/">
+            
+                <span>Xhr-learning续</span>
+        </a>
+        <div class="abstract-content">
+            xhr Learning 续2、AxiosAxios文档
+
+定义：Axios 是一个基于 promise 的 HTTP 库，可以用在浏览器和 node.js 中
+安装：$ npm install axios
+引入： import  axios  from  &#39;axios&#39;  cdn： https://unpkg.com/axios/dist/axios.min.js
+
+使用1）get请求1234567axios.get('/api/articles?type=more&amp;category=home&amp;shown_offset=1540351013034122&...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/11/27</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class="abstract-tags">
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="xhr">xhr</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href="/2018/11/27/Xhr-learning/">
+            
+                <span>Xhr-learning</span>
+        </a>
+        <div class="abstract-content">
+            xhr Learningkidish:  axios你用过没me：这是啥？…… 不好意思暴露智商了kidish：那你从原生开始写吧 …
+关于这一部分知识，一直都只是看过好几次文档，但是没有动手写过，这一次刚好系统地过一遍。
+1、Ajax
+asynchronous JavaScript an XML
+原生Ajax大致写法及一些涉及到的知识，一篇写得挺好的简书和另外一个挺好的学习参考
+基本写法  1） 创建请求
+  123var xhr = new XMLHttpRequest();xhr.open('GET', 'send-ajax-data.php'); //POSTxhr.send(n...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/11/27</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class="abstract-tags">
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="xhr">xhr</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href="/2018/11/27/Vuex/">
+            
+                <span>Vuex</span>
+        </a>
+        <div class="abstract-content">
+            Vuex learningvuex文档
+Vuex 是什么？
+Vuex 是一个专为 Vue.js 应用程序开发的状态管理模式，采用集中式存储管理应用的所有组件的状态
+
+使用场景
+应用够简单，最好不要使用 Vuex
+构建中大型单页应用——考虑如何更好地在组件外部管理状态——Vuex 
+安装：npm install vuex -S
+引入：import Vuex from &#39;vuex&#39; 、Vue.use(Vuex) 
+
+核心1、store（仓库）：包含着你的应用中大部分的状态 (state)
+
+Vuex 的状态存储是响应式的。当 Vue 组件从 store 中读取状态的时候,若 ...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/11/27</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class="abstract-tags">
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="Vue">Vue</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href="/2018/11/27/Vue-Router/">
+            
+                <span>Vue-Router</span>
+        </a>
+        <div class="abstract-content">
+            Vue Router 查漏补缺文档
+一、 动态路由匹配！当使用路由参数时，例如从 /user/foo 导航到 /user/bar，原来的组件实例会被复用——这意味着组件的生命周期钩子不会再被调用，So：想对路由参数的变化作出响应的话，可以1）watch $route 对象2）使用beforeRouteUpdate  导航守卫
+
+匹配优先级：同一个路径可以匹配多个路由，此时，匹配的优先级就按照路由的定义顺序——谁先定义的，谁的优先级就最高
+
+二、 嵌套路由：1）&lt;router-view&gt;渲染最高级路由匹配到的组件，不要是个组件都加2）提供一个空的子路由，会被渲染出来123456...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/11/27</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class="abstract-tags">
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="Vue">Vue</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href="/2018/11/27/Vue/">
+            
+                <span>Vue</span>
+        </a>
+        <div class="abstract-content">
+            vueNotes (2018/10/2~2018/10/19)1.Vue.js文档学习
+生命周期函数：beforeCreated/ created/ boforeMount/ mounted/ beforeUpdate/ updated/ beforeDertroy/ destroyed/! 不要在选项属性上或回调函数上使用箭头函数，因为箭头函数是和父级上下文绑定在一起的  
+
+V-html 可以输出真正的HTML，而双花括号会将数据解释为普通文本，所以需要注意：站点上动态渲染的HTML可能会比较危险，容易导致XSS攻击  
+
+v-on简写为@XXX=&quot;YYY&quot; v-...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/11/27</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class="abstract-tags">
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="Vue">Vue</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href="/2018/11/27/Nginx/">
+            
+                <span>Nginx</span>
+        </a>
+        <div class="abstract-content">
+            Nginx
+“Nginx是一款轻量级的HTTP服务器，采用事件驱动的异步非阻塞处理方式框架，这让其具有极好的IO性能，时常用于服务端的反向代理和负载均衡。”
+
+启动Nginx服务$nginx：直接启动$systemctl start nginx.service
+停止Nginx服务的四种方法$nginx -s stop：无论进程是否在工作，都直接停止进程$nginx -s  quit：比较温和一些，需要进程完成当前工作后再停止$killall nginx：直接杀死进程$systemctl stop nginx.service
+重启Nginx服务$nginx -s reopen$system...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/11/27</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class="abstract-tags">
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="Nginx">Nginx</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href="/2018/11/27/跨域/">
+            
+                <span>跨域</span>
+        </a>
+        <div class="abstract-content">
+            跨域探索一、 跨域是什么？A: 浏览器从一个域名的网页去请求另一个域名的资源时，域名、端口、协议任一不同，都是跨域
+
+localhost和127.0.0.1虽然都指向本机，但也属于跨域
+
+二、解决跨域的办法有什么？1、JSONPQ: what it is?A: Jsonp(JSON with Padding) : json 的一种”使用模式”，可以让网页从别的域名（网站）那获取资料，即跨域读取数据
+Q：原理是什么？A：ajax请求受同源策略影响——不允许进行跨域请求——而script标签src属性中的链接却可以访问跨域的js脚本，利用这个特性，服务端不再返回json格式的数据，而是返回一...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/11/27</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class="abstract-tags">
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="跨域探索">跨域探索</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
         <a class="abstract-title" href="/2018/11/27/thought-1/">
             
                 <span>thought_1</span>
@@ -422,81 +700,11 @@ kidish：js不是一个擅长计算密集型的语言 所以能减少计算就�
         </div>
     </article>
     
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2018/11/27/font-Icon-Make/">
-            
-                <span>font-Icon-Make</span>
-        </a>
-        <div class="abstract-content">
-            图标字体制作（@font-face）一、CSS3 @font-face1）浏览器支持
-
-Internet Explorer 9 只支持 .eot 类型的字体, Firefox, Chrome, Safari, 和 Opera 支持 .ttf 与.otf 两种类型字体.
-Internet Explorer 8 及更早IE版本不支持@font-face 规则.
-
-2） 使用意义
-
-网站可以使用字体以外的预先选择“合法”字体
-
-3）使用语法
-
-定义
-123456789101112131415@font-face&#123;	font-family: myFirstFont;	src: url(...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/11/27</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class="abstract-tags">
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="图标字体">图标字体</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2018/11/23/hello-world/">
-            
-                <span>Hello World</span>
-        </a>
-        <div class="abstract-content">
-            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick StartCreate a new post1$ hexo new "My New Post"
-More info: Writing
-Run server1$ hexo server
-More...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/11/23</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class="abstract-tags">
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="hello world">hello world</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
     <!-- paginator  -->
+    
+    <nav class="page-nav">
+        <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">NEXT &#62;</a>
+    </nav>
     
 </main>
             <!-- profile -->
@@ -728,9 +936,107 @@ More...
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 4
+        Total : 12
         </div>
         <!-- search  -->
         
@@ -746,7 +1052,47 @@ More...
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">11/27</span><a class="archive-post-title" href="/2018/11/27/thought-1/">thought_1</a>
+            <span class="archive-post-date">11/27</span><a class="archive-post-title" href="/2018/11/27/webpack-坑/">webpack-坑</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">11/27</span><a class="archive-post-title" href="/2018/11/27/Xhr-learning续/">Xhr-learning续</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">11/27</span><a class="archive-post-title" href="/2018/11/27/Vue-Router/">Vue-Router</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">11/27</span><a class="archive-post-title" href="/2018/11/27/Vuex/">Vuex</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">11/27</span><a class="archive-post-title" href="/2018/11/27/Xhr-learning/">Xhr-learning</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">11/27</span><a class="archive-post-title" href="/2018/11/27/跨域/">跨域</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">11/27</span><a class="archive-post-title" href="/2018/11/27/Nginx/">Nginx</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">11/27</span><a class="archive-post-title" href="/2018/11/27/Vue/">Vue</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">11/27</span><a class="archive-post-title" href="/2018/11/27/Cropper-js/">Cropper.js</a>
         </li>
     
     
@@ -756,7 +1102,7 @@ More...
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">11/27</span><a class="archive-post-title" href="/2018/11/27/Cropper-js/">Cropper.js</a>
+            <span class="archive-post-date">11/27</span><a class="archive-post-title" href="/2018/11/27/thought-1/">thought_1</a>
         </li>
     
     
@@ -771,11 +1117,21 @@ More...
     
         <span class="sidebar-tag-name" data-tags="图片裁剪"><span class="iconfont-archer">&#xe606;</span>图片裁剪</span>
     
-        <span class="sidebar-tag-name" data-tags="hello world"><span class="iconfont-archer">&#xe606;</span>hello world</span>
+        <span class="sidebar-tag-name" data-tags="Nginx"><span class="iconfont-archer">&#xe606;</span>Nginx</span>
+    
+        <span class="sidebar-tag-name" data-tags="xhr"><span class="iconfont-archer">&#xe606;</span>xhr</span>
+    
+        <span class="sidebar-tag-name" data-tags="Vue"><span class="iconfont-archer">&#xe606;</span>Vue</span>
     
         <span class="sidebar-tag-name" data-tags="图标字体"><span class="iconfont-archer">&#xe606;</span>图标字体</span>
     
+        <span class="sidebar-tag-name" data-tags="hello world"><span class="iconfont-archer">&#xe606;</span>hello world</span>
+    
+        <span class="sidebar-tag-name" data-tags="webpack"><span class="iconfont-archer">&#xe606;</span>webpack</span>
+    
         <span class="sidebar-tag-name" data-tags="思想养成"><span class="iconfont-archer">&#xe606;</span>思想养成</span>
+    
+        <span class="sidebar-tag-name" data-tags="跨域探索"><span class="iconfont-archer">&#xe606;</span>跨域探索</span>
     
     </div>
     <div class="iconfont-archer sidebar-tags-empty">&#xe678;</div>

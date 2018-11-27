@@ -22,7 +22,7 @@
     <meta name="description" content="">
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>font-Icon-Make · kilimanjaroL&#39;s Blog</title>
+    <title>Xhr-learning续 · kilimanjaroL&#39;s Blog</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -217,7 +217,7 @@
                 <a href="/">kilimanjaroL&#39;s Blog.</a>
             </div>
             <div class="post-title">
-                <a href="#" class="post-name">font-Icon-Make</a>
+                <a href="#" class="post-name">Xhr-learning续</a>
             </div>
     </div>
     
@@ -247,7 +247,7 @@ height:50vh;
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            font-Icon-Make
+            Xhr-learning续
             <!-- 404 -->
             
         </h1>
@@ -266,13 +266,13 @@ height:50vh;
                 
                     <div class="post-intro-tags">
     
-        <a class="post-tag" href="javascript:void(0);" data-tags="图标字体">图标字体</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags="xhr">xhr</a>
     
 </div>
                 
                 
                     <div class="post-intro-read">
-                        <span>字数统计: <span class="post-count word-count">528</span>阅读时长: <span class="post-count reading-time">2 min</span></span>
+                        <span>字数统计: <span class="post-count word-count">948</span>阅读时长: <span class="post-count reading-time">4 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
@@ -401,44 +401,76 @@ height:50vh;
         <div class="container container-unloaded">
             <main class="main post-page">
     <article class="article-entry">
-        <h2 id="图标字体制作（-font-face）"><a href="#图标字体制作（-font-face）" class="headerlink" title="图标字体制作（@font-face）"></a>图标字体制作（@font-face）</h2><h3 id="一、CSS3-font-face"><a href="#一、CSS3-font-face" class="headerlink" title="一、CSS3 @font-face"></a>一、CSS3 @font-face</h3><p>1）浏览器支持</p>
+        <h2 id="xhr-Learning-续"><a href="#xhr-Learning-续" class="headerlink" title="xhr Learning 续"></a>xhr Learning 续</h2><h3 id="2、Axios"><a href="#2、Axios" class="headerlink" title="2、Axios"></a>2、Axios</h3><p><a href="https://www.kancloud.cn/yunye/axios/234845" target="_blank" rel="noopener">Axios文档</a></p>
 <ul>
-<li>Internet Explorer 9 只支持 .eot 类型的字体, Firefox, Chrome, Safari, 和 Opera 支持 .ttf 与.otf 两种类型字体.</li>
-<li>Internet Explorer 8 及更早IE版本不支持@font-face 规则.</li>
+<li>定义：Axios 是一个基于 promise 的 HTTP 库，可以用在浏览器和 node.js 中</li>
+<li>安装：<code>$ npm install axios</code></li>
+<li>引入： <code>import  axios  from  &#39;axios&#39;</code><br>  cdn： <code>https://unpkg.com/axios/dist/axios.min.js</code></li>
 </ul>
-<p>2） 使用意义</p>
+<p><strong>使用</strong><br>1）get请求<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">axios.get(<span class="string">'/api/articles?type=more&amp;category=home&amp;shown_offset=1540351013034122&amp;first_view=false'</span>)</span><br><span class="line">.then(<span class="function"><span class="keyword">function</span>(<span class="params">res</span>)</span>&#123;</span><br><span class="line">	<span class="built_in">console</span>.log(res)</span><br><span class="line">&#125;)</span><br><span class="line">.catch(<span class="function"><span class="keyword">function</span>(<span class="params">error</span>)</span>&#123;</span><br><span class="line">	<span class="built_in">console</span>.log(error)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></p>
+<p>2）post请求<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">axios.post(<span class="string">'/api/v4/articles/45395824/voters'</span>,&#123;</span><br><span class="line">	params:&#123;</span><br><span class="line">	  voting:<span class="number">1</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;)</span><br><span class="line">.then(<span class="function"><span class="keyword">function</span>(<span class="params">res</span>)</span>&#123;</span><br><span class="line">	<span class="built_in">console</span>.log(res)</span><br><span class="line">&#125;)</span><br><span class="line">.catch(<span class="function"><span class="keyword">function</span>(<span class="params">error</span>)</span>&#123;</span><br><span class="line">	<span class="built_in">console</span>.log(error)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></p>
+<p>3）执行多个并发请求<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span>  <span class="title">getHomeArticle</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">	<span class="keyword">return</span>  axios.get(<span class="string">'/api/articles?type=more&amp;category=home&amp;shown_offset=1540351013034122&amp;first_view=false'</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span>  <span class="title">getCareerArticle</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">	<span class="keyword">return</span>  axios.get(<span class="string">'/api/articles?type=more&amp;category=career&amp;shown_offset=1540450144315916'</span>)</span><br><span class="line">&#125;</span><br><span class="line">axios.all([getHomeArticle(),getCareerArticle()])</span><br><span class="line">.then(axios.spread(<span class="function"><span class="keyword">function</span>(<span class="params">home,career</span>)</span>&#123;</span><br><span class="line">	<span class="built_in">console</span>.log(home)</span><br><span class="line">	<span class="built_in">console</span>.log(career)</span><br><span class="line">&#125;))</span><br></pre></td></tr></table></figure></p>
+<p><strong><code>axios.all(iterable)</code></strong> <strong><code>axios.spread(callback)</code></strong></p>
+<p>4）<strong><code>axios(url[, config])</code></strong><br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">axios(&#123;</span><br><span class="line">  method: <span class="string">'post'</span>,</span><br><span class="line">  url: <span class="string">'/user/12345'</span>,</span><br><span class="line">  data: &#123;</span><br><span class="line">    firstName: <span class="string">'Fred'</span>,</span><br><span class="line">    lastName: <span class="string">'Flintstone'</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
+<p>——请求方法的别名</p>
+<blockquote>
+<p> axios.request(config)<br>    axios.get(url[, config])<br>    axios.delete(url[, config])<br>    axios.head(url[, config])<br>    axios.post(url[, data[, config]])<br>    axios.put(url[, data[, config]])<br>    axios.patch(url[, data[, config]])</p>
+</blockquote>
+<p>在使用别名方法时， <code>url</code>、<code>method</code>、<code>data</code> 这些属性都不必在配置中指定<br>若想指定其他参数，可以使用<code>实例方法</code>如：<code>axios#post(url[, data[, config]])</code></p>
+<p>5）响应结构<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  data: &#123;&#125;,          <span class="comment">// `data` 由服务器提供的响应</span></span><br><span class="line">  status: <span class="number">200</span>,       <span class="comment">// `status` 来自服务器响应的 HTTP 状态码</span></span><br><span class="line">  statusText: <span class="string">'OK'</span>,  <span class="comment">// `statusText` 来自服务器响应的 HTTP 状态信息</span></span><br><span class="line">  headers: &#123;&#125;,       <span class="comment">// `headers` 服务器响应的头</span></span><br><span class="line">  config: &#123;&#125;         <span class="comment">// `config` 是为请求提供的配置信息</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>6）配置的默认值/defaults<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">axios.defaults.baseURL = <span class="string">'https://api.example.com'</span>;</span><br><span class="line">axios.defaults.headers.post[<span class="string">'Content-Type'</span>] = <span class="string">'application/x-www-form-urlencoded'</span>;</span><br></pre></td></tr></table></figure></p>
+<p> 配置的优先顺序：库的默认值 &lt; 实例的 <code>defaults</code> 属性 &lt; 请求的 <code>config</code> 参数</p>
+<p>7）错误处理<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">axios.get(<span class="string">'/user/12345'</span>)</span><br><span class="line">  .catch(<span class="function"><span class="keyword">function</span> (<span class="params">error</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (error.response) &#123;</span><br><span class="line">      <span class="comment">// 请求已发出，但服务器响应的状态码不在 2xx 范围内</span></span><br><span class="line">      <span class="built_in">console</span>.log(error.response)</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">      <span class="comment">// Something happened in setting up the request that triggered an Error</span></span><br><span class="line">      <span class="built_in">console</span>.log(<span class="string">'Error'</span>, error.message);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">console</span>.log(error.config);</span><br><span class="line">  &#125;);</span><br></pre></td></tr></table></figure></p>
 <ul>
-<li>网站可以使用字体以外的预先选择“合法”字体</li>
+<li><p>可以使用 <code>validateStatus</code> 配置选项定义一个自定义 HTTP 状态码的错误范围</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">axios.get(<span class="string">'/user/12345'</span>, &#123;</span><br><span class="line">  validateStatus: <span class="function"><span class="keyword">function</span> (<span class="params">status</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> status &lt; <span class="number">500</span>; <span class="comment">// 状态码在大于或等于500时才会 reject</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>kidish的封装：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">.catch(<span class="function"><span class="params">e</span>  =&gt;</span> &#123;</span><br><span class="line">	e.response  ?  cb(e.response) :  cb(&#123;<span class="attr">status</span>:  <span class="number">500</span>,<span class="attr">data</span>:&#123;<span class="attr">result</span>:  <span class="string">'errInter'</span>&#125;&#125;)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+</li>
 </ul>
-<p>3）使用语法</p>
+<h3 id="3、jQuery中的Ajax"><a href="#3、jQuery中的Ajax" class="headerlink" title="3、jQuery中的Ajax"></a>3、jQuery中的Ajax</h3><p><code>jQuery.ajax( url [, settings ] )</code><br><a href="http://www.css88.com/jqapi-1.9/jQuery.ajax/#jQuery-ajax-settings" target="_blank" rel="noopener">中文文档</a>   <code>settings</code>参数及设置<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$.ajax(&#123;<span class="attr">url</span>:  <span class="string">"api/articles?type=more&amp;category=home&amp;shown_offset=1540351013034122&amp;first_view=false"</span>,</span><br><span class="line">	contentType:  <span class="string">"application/json"</span></span><br><span class="line">&#125;).done(<span class="function"><span class="keyword">function</span>(<span class="params">res</span>)</span>&#123;</span><br><span class="line">	<span class="built_in">console</span>.log(res);</span><br><span class="line">&#125;).fail(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">	<span class="built_in">console</span>.log(<span class="string">"Error: "</span> + err.status);</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></p>
 <ul>
-<li><p>定义</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">@<span class="keyword">font-face</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="attribute">font-family</span>: myFirstFont;</span><br><span class="line">	<span class="attribute">src</span>: <span class="built_in">url</span>(<span class="string">'Sansation_Light.ttf'</span>)</span><br><span class="line">		,<span class="built_in">url</span>(<span class="string">'Sansation_Light.eot'</span>); <span class="comment">/* IE9 */</span></span><br><span class="line">	</span><br><span class="line">	<span class="comment">/*</span></span><br><span class="line"><span class="comment">	 其余可选参数：</span></span><br><span class="line"><span class="comment">	 font-stretch（如何拉伸）、</span></span><br><span class="line"><span class="comment">	 font-style（字体样式）、</span></span><br><span class="line"><span class="comment">	 font-weight（粗细）、</span></span><br><span class="line"><span class="comment">	 unicode-range（字体支持Unicode字符的范围）</span></span><br><span class="line"><span class="comment">	*/</span></span><br><span class="line">		</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<li><p><a href="http://www.css88.com/jqapi-1.9/jQuery.get/#jQuery-get-url-data-success-dataType" target="_blank" rel="noopener">jQuery.get( url [, data ] [, success ] [, dataType ] )</a></p>
 </li>
-<li><p>使用 </p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="attribute">font-family</span>:myFirstFont;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<li><p><code>[, success ]</code> 为当请求成功时运行的函数</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span>  data = &#123;<span class="attr">voting</span>:<span class="number">1</span>&#125;</span><br><span class="line">data = <span class="built_in">JSON</span>.stringify(data)</span><br><span class="line">$.post(<span class="string">'/api/v4/articles/45395824/voters'</span>,&#123;data&#125;,</span><br><span class="line">	<span class="function"><span class="keyword">function</span>(<span class="params">data,status</span>)</span>&#123;</span><br><span class="line">		<span class="built_in">console</span>.log(<span class="string">"Data: "</span> + data + <span class="string">"\nStatus: "</span> + status);</span><br><span class="line">	&#125;,<span class="string">"json"</span></span><br><span class="line">);</span><br></pre></td></tr></table></figure>
 </li>
-</ul>
-<p>! font-family命名若是原本系统就有的字体名称，会造成覆盖</p>
-<h3 id="二、利用-font-face制作像字体一样使用的icon"><a href="#二、利用-font-face制作像字体一样使用的icon" class="headerlink" title="二、利用@font-face制作像字体一样使用的icon"></a>二、利用<code>@font-face</code>制作像字体一样使用的icon</h3><ul>
-<li><p><a href="https://icomoon.io/" target="_blank" rel="noopener">需要用到的网站:icomoon</a><br>  1）打开网站点击右上角<code>IcoMoon App</code><br>  2）点击左上角<code>Import Icons</code>导入自己的<code>svg</code>图标， 或者选择下面已经有的图标<br>  3）点击选择一个或者多个图标后选择右下角<code>Generate Font</code><br>  4）可以设置每个图标的名字或者使用默认的名字，(此时点击图标处的<code>Get Code</code>可以看到相应的代码）<br>  6）点击右下角<code>Download</code>即可下载压缩包<br>  5）解压后把文件中的<code>fonts</code>一整个文件夹导入项目中<br>  6）在项目中使用，代码如下：</p>
-  <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">@<span class="keyword">font-face</span> &#123;</span><br><span class="line">	<span class="attribute">font-family</span>: <span class="string">'heart'</span>;</span><br><span class="line">	<span class="attribute">src</span>:  <span class="built_in">url</span>(<span class="string">'./assets/fonts/icomoon.eot'</span>) <span class="built_in">format</span>(<span class="string">'eot'</span>),</span><br><span class="line">		  <span class="built_in">url</span>(<span class="string">'./assets/fonts/icomoon.ttf'</span>) <span class="built_in">format</span>(<span class="string">'truetype'</span>),</span><br><span class="line">		  <span class="built_in">url</span>(<span class="string">'./assets/fonts/icomoon.woff'</span>) <span class="built_in">format</span>(<span class="string">'woff'</span>),</span><br><span class="line">		  <span class="built_in">url</span>(<span class="string">'./assets/fonts/icomoon.svg'</span>) <span class="built_in">format</span>(<span class="string">'svg'</span>);</span><br><span class="line">	<span class="attribute">font-style</span>: normal;</span><br><span class="line">	<span class="attribute">font-weight</span>: normal;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.icon</span> &#123;</span><br><span class="line">	<span class="attribute">font-family</span>: <span class="string">'heart'</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>  使用的时候需要带上相应的类名（icon-设置的图标名或者默认的图标名）<br>  代码可以在网站的每个图标点击<code>Get Code</code>即可看见</p>
-  <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">span</span>  <span class="attr">class</span>=<span class="string">"icon icon-icon-heart"</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br></pre></td></tr></table></figure>
-  <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.icon-icon-heart</span><span class="selector-pseudo">:before</span> &#123;</span><br><span class="line">	<span class="attribute">content</span>: <span class="string">"\66"</span>;</span><br><span class="line">	<span class="attribute">color</span>: <span class="number">#eb4f4f</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>  到此为止便完成了svg图标字体的制作，此时引入的图标可以像使用字体一样，可以通过修改<code>font-size</code>改变大小，通过<code>color</code>改变颜色等</p>
-  <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.icon-icon-heart</span><span class="selector-pseudo">:before</span> &#123;</span><br><span class="line">	<span class="attribute">content</span>: <span class="string">"\66"</span>;</span><br><span class="line">	<span class="attribute">color</span>: <span class="number">#e9eb4f</span>;</span><br><span class="line">	<span class="attribute">font-size</span>: <span class="number">30px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<li><p><a href="http://www.css88.com/jqapi-1.9/jQuery.get/#jQuery-get-url-data-success-dataType" target="_blank" rel="noopener">jQuery.get( url [, data ] [, success ] [, dataType ] )</a></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$.get(<span class="string">'api/articles?type=more&amp;category=home&amp;shown_offset=1540351013034122&amp;first_view=false'</span>,</span><br><span class="line">	<span class="function"><span class="keyword">function</span>(<span class="params">data,status</span>)</span>&#123;</span><br><span class="line">		<span class="built_in">console</span>.log(data)</span><br><span class="line">		<span class="built_in">console</span>.log(status) <span class="comment">//success</span></span><br><span class="line">	&#125;</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
+<p>更多使用，总感觉用到了才知道。。。。。。</p>
+<h3 id="4、番外"><a href="#4、番外" class="headerlink" title="4、番外"></a>4、番外</h3><p><strong>Fetch</strong><br>Fetch 是浏览器提供的原生 AJAX 接口。<br>XMLHttpRequest不符合关注分离原则，且基于事件的异步模型写起来也没有现代的 Promise，generator/yield，async/await 友好,因此Fetch出现正是来解决这一问题。</p>
+<ul>
+<li><p>Fetch 优点主要有：</p>
+<blockquote>
+<ol>
+<li>语法简洁，更加语义化</li>
+<li>基于标准 Promise 实现，支持 async/await</li>
+<li>同构方便，使用  <a href="https://github.com/matthew-andrews/isomorphic-fetch" target="_blank" rel="noopener">isomorphic-fetch</a></li>
+</ol>
+</blockquote>
+</li>
+<li><p>缺点：浏览器支持率不高</p>
+</li>
+<li><p>使用:<br>  安装：<code>npm install whatwg-fetch --save</code><br>  为了兼容老版本的浏览器，还需要安装 <code>npm install es6-promise --save</code><br>  引入：</p>
+  <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="string">'whatwg-fetch'</span></span><br><span class="line"><span class="keyword">import</span> <span class="string">'es6-promise'</span></span><br></pre></td></tr></table></figure>
+<p>!    Fetch 请求默认是不带 cookie 的，需要设置  <code>fetch(url, {credentials: &#39;include&#39;})</code><br>基本写法参考：<a href="https://segmentfault.com/a/1190000011433064" target="_blank" rel="noopener">参考学习文章</a></p>
+</li>
+<li><p>其余学习参考<br><a href="https://github.com/camsong/blog/issues/2" target="_blank" rel="noopener">参考学习文章:传统 Ajax 已死，Fetch 永生 </a><br><a href="https://blog.csdn.net/crystal6918/article/details/53318194" target="_blank" rel="noopener">参考学习文章:什么是Fetch</a></p>
+</li>
+</ul>
+<p>目前还未应用，暂时做一个了解，后续待深入学习~</p>
 
     </article>
     <!-- license  -->
     
         <div class="license-wrapper">
             <p>原文作者：<a href="https://kilimanjarol.github.io">KilimanjaroL</a>
-            </p><p>原文链接：<a href="https://kilimanjarol.github.io/2018/11/27/font-Icon-Make/">https://kilimanjarol.github.io/2018/11/27/font-Icon-Make/</a>
-            </p><p>发表日期：<a href="https://kilimanjarol.github.io/2018/11/27/font-Icon-Make/">November 27th 2018, 10:03:50 am</a>
-            </p><p>更新日期：<a href="https://kilimanjarol.github.io/2018/11/27/font-Icon-Make/">November 27th 2018, 10:52:55 am</a>
+            </p><p>原文链接：<a href="https://kilimanjarol.github.io/2018/11/27/Xhr-learning续/">https://kilimanjarol.github.io/2018/11/27/Xhr-learning续/</a>
+            </p><p>发表日期：<a href="https://kilimanjarol.github.io/2018/11/27/Xhr-learning续/">November 27th 2018, 2:59:58 pm</a>
+            </p><p>更新日期：<a href="https://kilimanjarol.github.io/2018/11/27/Xhr-learning续/">November 27th 2018, 3:05:20 pm</a>
             </p><p>版权声明：本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
         </div>
     
@@ -447,16 +479,16 @@ height:50vh;
         <li class="next">
             
                 <div class="nextSlogan">Next Post</div>
-                <a href="/2018/11/27/Cropper-js/" title="Cropper.js">
-                    <div class="nextTitle">Cropper.js</div>
+                <a href="/2018/11/27/webpack-坑/" title="webpack-坑">
+                    <div class="nextTitle">webpack-坑</div>
                 </a>
             
         </li>
         <li class="previous">
             
                 <div class="prevSlogan">Previous Post</div>
-                <a href="/2018/11/23/hello-world/" title="Hello World">
-                    <div class="prevTitle">Hello World</div>
+                <a href="/2018/11/27/Xhr-learning/" title="Xhr-learning">
+                    <div class="prevTitle">Xhr-learning</div>
                 </a>
             
         </li>
@@ -575,7 +607,7 @@ top:50vh;
         <div class="toc-catalog">
             <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
         </div>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#图标字体制作（-font-face）"><span class="toc-number">1.</span> <span class="toc-text">图标字体制作（@font-face）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#一、CSS3-font-face"><span class="toc-number">1.1.</span> <span class="toc-text">一、CSS3 @font-face</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二、利用-font-face制作像字体一样使用的icon"><span class="toc-number">1.2.</span> <span class="toc-text">二、利用@font-face制作像字体一样使用的icon</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#xhr-Learning-续"><span class="toc-number">1.</span> <span class="toc-text">xhr Learning 续</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2、Axios"><span class="toc-number">1.1.</span> <span class="toc-text">2、Axios</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3、jQuery中的Ajax"><span class="toc-number">1.2.</span> <span class="toc-text">3、jQuery中的Ajax</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4、番外"><span class="toc-number">1.3.</span> <span class="toc-text">4、番外</span></a></li></ol></li></ol>
     </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>

@@ -346,27 +346,64 @@
     
     
     <article class="index-post">
-        <a class="abstract-title" href="/2018/11/23/hello-world/">
+        <a class="abstract-title" href="/2018/11/27/Xhr-learning续/">
             
-                <span>Hello World</span>
+                <span>Xhr-learning续</span>
         </a>
         <div class="abstract-content">
-            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick StartCreate a new post1$ hexo new "My New Post"
-More info: Writing
-Run server1$ hexo server
-More...
+            xhr Learning 续2、AxiosAxios文档
+
+定义：Axios 是一个基于 promise 的 HTTP 库，可以用在浏览器和 node.js 中
+安装：$ npm install axios
+引入： import  axios  from  &#39;axios&#39;  cdn： https://unpkg.com/axios/dist/axios.min.js
+
+使用1）get请求1234567axios.get('/api/articles?type=more&amp;category=home&amp;shown_offset=1540351013034122&...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
             <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/11/23</span>
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/11/27</span>
             </div>
             <!-- tags  -->
             
             <div class="abstract-tags">
     
-        <a class="post-tag" href="javascript:void(0);" data-tags="hello world">hello world</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags="xhr">xhr</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href="/2018/11/27/Xhr-learning/">
+            
+                <span>Xhr-learning</span>
+        </a>
+        <div class="abstract-content">
+            xhr Learningkidish:  axios你用过没me：这是啥？…… 不好意思暴露智商了kidish：那你从原生开始写吧 …
+关于这一部分知识，一直都只是看过好几次文档，但是没有动手写过，这一次刚好系统地过一遍。
+1、Ajax
+asynchronous JavaScript an XML
+原生Ajax大致写法及一些涉及到的知识，一篇写得挺好的简书和另外一个挺好的学习参考
+基本写法  1） 创建请求
+  123var xhr = new XMLHttpRequest();xhr.open('GET', 'send-ajax-data.php'); //POSTxhr.send(n...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/11/27</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class="abstract-tags">
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="xhr">xhr</a>
     
 </div>
             
