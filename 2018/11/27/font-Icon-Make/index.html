@@ -395,7 +395,7 @@ height:50vh;
         <div class="container container-unloaded">
             <main class="main post-page">
     <article class="article-entry">
-        <h3 id="图标字体制作（-font-face）"><a href="#图标字体制作（-font-face）" class="headerlink" title="图标字体制作（@font-face）"></a>图标字体制作（@font-face）</h3><h4 id="一、CSS3-font-face"><a href="#一、CSS3-font-face" class="headerlink" title="一、CSS3 @font-face"></a>一、CSS3 @font-face</h4><p>1）浏览器支持</p>
+        <h2 id="图标字体制作（-font-face）"><a href="#图标字体制作（-font-face）" class="headerlink" title="图标字体制作（@font-face）"></a>图标字体制作（@font-face）</h2><h3 id="一、CSS3-font-face"><a href="#一、CSS3-font-face" class="headerlink" title="一、CSS3 @font-face"></a>一、CSS3 @font-face</h3><p>1）浏览器支持</p>
 <ul>
 <li>Internet Explorer 9 只支持 .eot 类型的字体, Firefox, Chrome, Safari, 和 Opera 支持 .ttf 与.otf 两种类型字体.</li>
 <li>Internet Explorer 8 及更早IE版本不支持@font-face 规则.</li>
@@ -414,7 +414,7 @@ height:50vh;
 </li>
 </ul>
 <p>! font-family命名若是原本系统就有的字体名称，会造成覆盖</p>
-<h4 id="二、利用-font-face制作像字体一样使用的icon"><a href="#二、利用-font-face制作像字体一样使用的icon" class="headerlink" title="二、利用@font-face制作像字体一样使用的icon"></a>二、利用<code>@font-face</code>制作像字体一样使用的icon</h4><ul>
+<h3 id="二、利用-font-face制作像字体一样使用的icon"><a href="#二、利用-font-face制作像字体一样使用的icon" class="headerlink" title="二、利用@font-face制作像字体一样使用的icon"></a>二、利用<code>@font-face</code>制作像字体一样使用的icon</h3><ul>
 <li><p><a href="https://icomoon.io/" target="_blank" rel="noopener">需要用到的网站:icomoon</a><br>  1）打开网站点击右上角<code>IcoMoon App</code><br>  2）点击左上角<code>Import Icons</code>导入自己的<code>svg</code>图标， 或者选择下面已经有的图标<br>  3）点击选择一个或者多个图标后选择右下角<code>Generate Font</code><br>  4）可以设置每个图标的名字或者使用默认的名字，(此时点击图标处的<code>Get Code</code>可以看到相应的代码）<br>  6）点击右下角<code>Download</code>即可下载压缩包<br>  5）解压后把文件中的<code>fonts</code>一整个文件夹导入项目中<br>  6）在项目中使用，代码如下：</p>
   <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">@<span class="keyword">font-face</span> &#123;</span><br><span class="line">	<span class="attribute">font-family</span>: <span class="string">'heart'</span>;</span><br><span class="line">	<span class="attribute">src</span>:  <span class="built_in">url</span>(<span class="string">'./assets/fonts/icomoon.eot'</span>) <span class="built_in">format</span>(<span class="string">'eot'</span>),</span><br><span class="line">		  <span class="built_in">url</span>(<span class="string">'./assets/fonts/icomoon.ttf'</span>) <span class="built_in">format</span>(<span class="string">'truetype'</span>),</span><br><span class="line">		  <span class="built_in">url</span>(<span class="string">'./assets/fonts/icomoon.woff'</span>) <span class="built_in">format</span>(<span class="string">'woff'</span>),</span><br><span class="line">		  <span class="built_in">url</span>(<span class="string">'./assets/fonts/icomoon.svg'</span>) <span class="built_in">format</span>(<span class="string">'svg'</span>);</span><br><span class="line">	<span class="attribute">font-style</span>: normal;</span><br><span class="line">	<span class="attribute">font-weight</span>: normal;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.icon</span> &#123;</span><br><span class="line">	<span class="attribute">font-family</span>: <span class="string">'heart'</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>  使用的时候需要带上相应的类名（icon-设置的图标名或者默认的图标名）<br>  代码可以在网站的每个图标点击<code>Get Code</code>即可看见</p>
@@ -432,7 +432,7 @@ height:50vh;
             <p>原文作者：<a href="https://kilimanjarol.github.io">KilimanjaroL</a>
             </p><p>原文链接：<a href="https://kilimanjarol.github.io/2018/11/27/font-Icon-Make/">https://kilimanjarol.github.io/2018/11/27/font-Icon-Make/</a>
             </p><p>发表日期：<a href="https://kilimanjarol.github.io/2018/11/27/font-Icon-Make/">November 27th 2018, 10:03:50 am</a>
-            </p><p>更新日期：<a href="https://kilimanjarol.github.io/2018/11/27/font-Icon-Make/">November 27th 2018, 10:04:30 am</a>
+            </p><p>更新日期：<a href="https://kilimanjarol.github.io/2018/11/27/font-Icon-Make/">November 27th 2018, 10:24:14 am</a>
             </p><p>版权声明：本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
         </div>
     
@@ -569,7 +569,7 @@ top:50vh;
         <div class="toc-catalog">
             <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
         </div>
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#图标字体制作（-font-face）"><span class="toc-number">1.</span> <span class="toc-text">图标字体制作（@font-face）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#一、CSS3-font-face"><span class="toc-number">1.1.</span> <span class="toc-text">一、CSS3 @font-face</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#二、利用-font-face制作像字体一样使用的icon"><span class="toc-number">1.2.</span> <span class="toc-text">二、利用@font-face制作像字体一样使用的icon</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#图标字体制作（-font-face）"><span class="toc-number">1.</span> <span class="toc-text">图标字体制作（@font-face）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#一、CSS3-font-face"><span class="toc-number">1.1.</span> <span class="toc-text">一、CSS3 @font-face</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二、利用-font-face制作像字体一样使用的icon"><span class="toc-number">1.2.</span> <span class="toc-text">二、利用@font-face制作像字体一样使用的icon</span></a></li></ol></li></ol>
     </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
@@ -622,6 +622,20 @@ top:50vh;
     
     
     
+    <div class="archive-year"> 2018 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">11/27</span><a class="archive-post-title" href="/2018/11/27/font-Icon-Make/">font-Icon-Make</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
     <div class="archive-year"> Invalid date </div>
     <ul class="year-list">
     
@@ -642,11 +656,6 @@ top:50vh;
     
         <li class="archive-post-item">
             <span class="archive-post-date">11/27</span><a class="archive-post-title" href="/2018/11/27/Cropper-js/">Cropper.js</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
-            <span class="archive-post-date">11/27</span><a class="archive-post-title" href="/2018/11/27/font-Icon-Make/">font-Icon-Make</a>
         </li>
     
     </ul></div>
