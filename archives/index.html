@@ -346,6 +346,45 @@
     
     
     <article class="index-post">
+        <a class="abstract-title" href="/2018/12/06/文本溢出/">
+            
+                <span>文本溢出</span>
+        </a>
+        <div class="abstract-content">
+            文本溢出前言：有的时候文字的长度超出给定的范围，就会用 … 来代替，这种场景还是挺常见的，之前没有自己了解过，这一次改一个bug的时候遇到了，于是知道了这种叫做：文本溢出
+实现方法：单行文本溢出：123white-space:  nowrap; overflow:  hidden;text-overflow:  ellipsis;
+
+`white-space:nowrap：规定段落中的文本不进行换行
+text-overflow：规定当文本溢出包含元素时发生的事情
+clip：直接裁剪掉,
+elipsis：裁剪了的部分用一个省略号代替显示
+
+
+
+多行文本溢出1）webkit的CSS扩展属性实...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/12/06</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class="abstract-tags">
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="CSS">CSS</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
         <a class="abstract-title" href="/2018/11/29/My-Record/">
             
                 <span class="stick-top iconfont-archer">&#xe63d;</span>
@@ -653,37 +692,6 @@ Q：原理是什么？A：ajax请求受同源策略影响——不允许进行�
         </div>
     </article>
     
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2018/11/27/thought-1/">
-            
-                <span>thought_1</span>
-        </a>
-        <div class="abstract-content">
-            思想养成篇（一）  能少计算就少计算记于2018/10/22
-kidish：js不是一个擅长计算密集型的语言 所以能减少计算就减少计算我：没反应过来，单纯记下了这句话then：一个计算文件从创建开始距今的时间的函数（n years /months/days/mimutes/seconds ago）
-我的代码:12345678910111213141516171819202122232425262728timeToShow(createtime) &#123;var  time  = [];var  showTime  =  0;var  timestamp  =  Date.parse(...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/11/27</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class="abstract-tags">
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="思想养成">思想养成</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
     <!-- paginator  -->
     
     <nav class="page-nav">
@@ -928,9 +936,20 @@ kidish：js不是一个擅长计算密集型的语言 所以能减少计算就�
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 13
+        Total : 14
         </div>
         <!-- search  -->
         
@@ -943,6 +962,11 @@ kidish：js不是一个擅长计算密集型的语言 所以能减少计算就�
     
     <div class="archive-year"> 2018 </div>
     <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/06</span><a class="archive-post-title" href="/2018/12/06/文本溢出/">文本溢出</a>
+        </li>
     
     
         <li class="archive-post-item">
@@ -1014,23 +1038,25 @@ kidish：js不是一个擅长计算密集型的语言 所以能减少计算就�
         <div class="sidebar-panel-tags">
     <div class="sidebar-tags-name">
     
-        <span class="sidebar-tag-name" data-tags="图片裁剪"><span class="iconfont-archer">&#xe606;</span>图片裁剪</span>
-    
         <span class="sidebar-tag-name" data-tags="Nginx"><span class="iconfont-archer">&#xe606;</span>Nginx</span>
     
         <span class="sidebar-tag-name" data-tags="Vue"><span class="iconfont-archer">&#xe606;</span>Vue</span>
     
         <span class="sidebar-tag-name" data-tags="xhr"><span class="iconfont-archer">&#xe606;</span>xhr</span>
     
-        <span class="sidebar-tag-name" data-tags="图标字体"><span class="iconfont-archer">&#xe606;</span>图标字体</span>
+        <span class="sidebar-tag-name" data-tags="图片裁剪"><span class="iconfont-archer">&#xe606;</span>图片裁剪</span>
     
         <span class="sidebar-tag-name" data-tags="hello world"><span class="iconfont-archer">&#xe606;</span>hello world</span>
     
-        <span class="sidebar-tag-name" data-tags="思想养成"><span class="iconfont-archer">&#xe606;</span>思想养成</span>
+        <span class="sidebar-tag-name" data-tags="CSS"><span class="iconfont-archer">&#xe606;</span>CSS</span>
+    
+        <span class="sidebar-tag-name" data-tags="跨域探索"><span class="iconfont-archer">&#xe606;</span>跨域探索</span>
     
         <span class="sidebar-tag-name" data-tags="webpack"><span class="iconfont-archer">&#xe606;</span>webpack</span>
     
-        <span class="sidebar-tag-name" data-tags="跨域探索"><span class="iconfont-archer">&#xe606;</span>跨域探索</span>
+        <span class="sidebar-tag-name" data-tags="图标字体"><span class="iconfont-archer">&#xe606;</span>图标字体</span>
+    
+        <span class="sidebar-tag-name" data-tags="思想养成"><span class="iconfont-archer">&#xe606;</span>思想养成</span>
     
     </div>
     <div class="iconfont-archer sidebar-tags-empty">&#xe678;</div>
